@@ -7,6 +7,8 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Teste next</h1>
       <Link href={'/sobre'}>clique aqui</Link>
+
+      {/* COLOCA O TEXTO AQUI */}
     </main>
   );
 }
