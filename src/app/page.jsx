@@ -2,53 +2,38 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
+// import background from '../../public/background.jpg'
+
 //  import logo4 from "public/logo4.png";
 
 export default function Home() {
-  return (
-    <header className={styles.header}>
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          {/* <Image
-            src={"https://images.unsplash.com/photo-1676288176869-b2e1c6bea1a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-            width={100}
-            height={100}
-          /> */}
-          <img src={'/img/logo4.png'} className={styles.logo} alt="logo" />
-        </div>
-      </nav>
-    </header>
-  )
+    return (
+        <section className={styles.principal}>
+        <header className={styles.header}>
+            <div className={styles.logo}>
+                <Image
+                    src={'logo4.png'}
+                    width={200}
+                    height={50}
+                    alt={"logo"}
+                    unoptimized={true}
+                />
+            </div>
+            <nav className={styles.navbar}>
+                <ul className={styles.nav_list}>
+                    <li className={styles.button_nav}>INICIO</li>
+                    <li className={styles.nav_item}>SERVIÇOS</li>
+                    <li className={styles.nav_item}>GALERIA</li>
+                    <li className={styles.nav_item}>SOBRE NÓS</li>
+                    <li className={styles.nav_item}>AGENDA</li>
+                    <li className={styles.btn_login}>login</li>
+                    {/* <li className={styles.btn  styles.btn_sep} classname={styles.btn_3} classn>me=Login 2</li> */}
+                </ul>
+            </nav>
+
+        </header>
+        </section>
+        
+        
+ )
 }
-
-
-{/* <nav class="nav-bar">
-<div class="logo">
-    <Image src="logo4.png" alt="logo" class="img">
-    
-</div>
-<div class="nav-list">
-    <ul>
-        <li class="nav-item"><a href="#" class="nav-link">INICIO</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">SERVIÇOS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">SOCIAL</a></li>
-    </ul>
-</div>
-
-<div class="mobile-menu-icon">
-    <button onclick="menuShow()"><img class="icon" src="menu_white_36dp (1).svg" alt=""></button>
-</div>
-</nav>
-
-<div class="mobile-menu">
-<ul>
-<li class="nav-item"><a href="#" class="nav-link">INICIO</a></li>
-<li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
-<li class="nav-item"><a href="#" class="nav-link">SERVIÇOS</a></li>
-<li class="nav-item"><a href="#" class="nav-link">SOCIAL</a></li>
-</ul>
-
-</div>
-</div>
-< /header> */}
