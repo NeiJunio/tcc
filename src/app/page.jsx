@@ -26,12 +26,20 @@ export default function Home() {
                     <li className={styles.nav_item}>GALERIA</li>
                     <li className={styles.nav_item}>SOBRE NÓS</li>
                     <li className={styles.nav_item}>AGENDA</li>
-                    <li className={styles.btn_login}>login</li>
-                    {/* <li className={styles.btn  styles.btn_sep} classname={styles.btn_3} classn>me=Login 2</li> */}
+                    {/* <li className={styles.btn_login}>login</li> */}
+                    {/* <li className={styles.btn } {styles.btn_3}{styles.btn_sep}>me=Login 2</li> */}
                 </ul>
             </nav>
 
         </header>
+
+        <div className={styles.pagina_principal}>
+            {/* <div className={styles.titulo}>
+                <h1>SEU CARRO MERECE RESPEITO</h1>
+            </div> */}
+        </div>
+
+
         </section>
         
         
