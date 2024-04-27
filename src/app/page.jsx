@@ -32,11 +32,17 @@ export default function Home() {
             </nav>
 
         </header>
-
-        <div className={styles.pagina_principal}>
-            {/* <div className={styles.titulo}>
-                <h1>SEU CARRO MERECE RESPEITO</h1>
-            </div> */}
+        
+        <div className={styles.imagebackground}>
+            <div className={styles.titulofundo}>
+                <div className={styles.titulo}>
+                    <h1>SEU CARRO MERECE BRILHAR COM EXCELÊNCIA!</h1>
+                </div>
+                <div className={styles.subtitulo}>
+                            <h2>Transformando cada detalhe em um espetáculo de elegância e proteção, 
+                            nossa estética automotiva eleva o seu veículo a um novo patamar de beleza e sofisticação</h2>
+                </div>
+            </div>
         </div>
 
 
