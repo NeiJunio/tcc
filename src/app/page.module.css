@@ -16,7 +16,7 @@
     display: flex;
     justify-content: end;
     padding: 1.5rem 2rem;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     width: 50% ;
     margin: 0 auto;
     /* height: 100%; */
@@ -26,7 +26,7 @@
 
 .nav_item {
     margin: 0 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
@@ -42,6 +42,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    color: white;
     z-index: 1;
   } 
   
@@ -53,7 +54,7 @@
     top: 100%;
     width: 140%;
     height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -115,7 +116,7 @@
     width: 100px;
     border: 1px solid #fff;
     background-color: blue;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
@@ -142,20 +143,118 @@
 
 
 
- .pagina_principal{
-    color: rgb(0, 0, 0);
-    width: 800px;
-    height: 500px;
+.imagebackground{
+    background-image: url(../../public/backgroundopacidade.jpg);
+    background-repeat: no-repeat;
+    width: 1520px;
+    height: 770px;
+}
 
-    background-image: url('/public/background.jpg'); 
+.titulofundo{
+     /* background-color: #e74c3c;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 950px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: inherit;  
+    text-align: center;
+    /* background-color: #464646; */
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.subtitulo{
+    display: flex;
+    color: white;
+    width: 800px;
+    height: 50px;
+    /* background-color: rgb(118, 118, 118); */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+} 
+
+.servicos{
+    background-color: #7d2828;
+    width: 1520px;
+    height: 750px;
+    display: flex;
+}
+
+.tituloservicos{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 755px;
+    height: 100px;
+    margin-left: 26.5%;
+    margin-top: 3%;
+    background-color: #FF9D00; 
+    font-size: 66px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cardservicos{
+    background-color: rgb(164, 134, 89);
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 550px;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 19.5%;
+}
+
+.card1servicos{
+    background-color: #FF9D00;
+    border-radius: 10px;
+    width: 400px;
+    height: 277px;
+    display: flex;
+    margin-inline-start: 10%;
+    margin-inline: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.card2servicos{
+    background-color: #FF9D00;
+    border-radius: 10px;
+    width: 400px;
+    height: 277px;
+    display: flex;
+    margin-inline-end: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 } 
 
 
 
 
-
-
-/* General button style */
+/* BOTÃO STYLES */
 .btn {
     border: none;
     font-family: 'Lato';
@@ -204,7 +303,7 @@
   }
   
   .btn_sep:before {
-    background: rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.15);
   }
   
 /* Button 3 */
