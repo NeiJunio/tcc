@@ -39,15 +39,37 @@ export default function Home() {
                     <h1>SEU CARRO MERECE BRILHAR COM EXCELÊNCIA!</h1>
                 </div>
                 <div className={styles.subtitulo}>
-                            <h2>Transformando cada detalhe em um espetáculo de elegância e proteção, 
-                            nossa estética automotiva eleva o seu veículo a um novo patamar de beleza e sofisticação</h2>
+                    <h2>Transformando cada detalhe em um espetáculo de elegância e proteção, 
+                    nossa estética automotiva eleva o seu veículo a um novo patamar de beleza e sofisticação</h2>
                 </div>
             </div>
+        </div>
+
+
+        <div className={styles.servicos}> 
+            <div className={styles.tituloservicos}>
+                <h1>SERVIÇOS</h1>
+            </div>
+                <div className={styles.cardservicos}>
+                    <div className={styles.card1servicos}>
+                        <h1>Card 1</h1>
+                        <p>Descrição</p> 
+                    </div>
+
+                    <div className={styles.card2servicos}>
+                        <h1>Card 2</h1>
+                        <p>Descrição</p>
+                    </div>
+
+                </div>
         </div>
 
 
         </section>
         
         
- )
+               
+
+    )
+ 
 }

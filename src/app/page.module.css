@@ -146,17 +146,17 @@
 .imagebackground{
     background-image: url(../../public/backgroundopacidade.jpg);
     background-repeat: no-repeat;
-    width: 1481px;
-    height: 750px;
+    width: 1520px;
+    height: 770px;
 }
 
 .titulofundo{
-    /* background-color: #e74c3c; */
+     /* background-color: #e74c3c;  */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1450px;
-    height: 450px;
+    width: 1520px;
+    height: 950px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -186,6 +186,69 @@
     text-align: center;
     align-items: center;
     margin-top: 10%;
+} 
+
+.servicos{
+    background-color: #7d2828;
+    width: 1520px;
+    height: 750px;
+    display: flex;
+}
+
+.tituloservicos{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 755px;
+    height: 100px;
+    margin-left: 26.5%;
+    margin-top: 3%;
+    background-color: #FF9D00; 
+    font-size: 66px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cardservicos{
+    background-color: rgb(164, 134, 89);
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 550px;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 19.5%;
+}
+
+.card1servicos{
+    background-color: #FF9D00;
+    border-radius: 10px;
+    width: 400px;
+    height: 277px;
+    display: flex;
+    margin-inline-start: 10%;
+    margin-inline: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.card2servicos{
+    background-color: #FF9D00;
+    border-radius: 10px;
+    width: 400px;
+    height: 277px;
+    display: flex;
+    margin-inline-end: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 } 
 
 
