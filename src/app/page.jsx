@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from "@/app/components/button";
-import Carrosel from "./components/carrosel";
 
 
 export default function Home() {
@@ -15,31 +12,271 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </head>
             <body>
-                {/* <header className={styles.header}>
-                    <div className={styles.logo}>
-                        <Image
-                            src={'logo4.png'}
-                            width={200}
-                            height={50}
-                            alt={"logo"}
-                            unoptimized={true}
-                        />
-                    </div>
+                <div className={styles.principal}>
+                    <div className={styles.img1}>imagem 1</div>
+                    <div className={styles.img2}>imagem 2</div>
+                    <div className={styles.img3}>imagem 3</div>
+                    <div className={styles.img4}>imagem 4</div>
 
-                    <nav className={styles.navbar}>
-                        <ul className={styles.nav_list}>
-                            <li className={styles.nav_item}><Link href={""} className={styles.link}>INICIO</Link></li>
-                            <li className={styles.nav_item}><Link href={""} className={styles.link}>SERVIÇOS</Link></li>
-                            <li className={styles.nav_item}><Link href={""} className={styles.link}>GALERIA</Link></li>
-                            <li className={styles.nav_item}><Link href={""} className={styles.link}>SOBRE NÓS</Link></li>
-                            <li className={styles.nav_item}><Link href={""} className={styles.link}>AGENDA</Link></li>
-                            <li className={styles.btn_login}><Link href={""} className={styles.link_btn_login}>LOGIN</Link></li>
-                        </ul>
-                    </nav>
+                    {/* <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item16}>16</div>
+                    <div className={styles.item17}>17</div>
+                    <div className={styles.item18}>18</div>
+                    <div className={styles.item19}>19</div>
+                    <div className={styles.item20}>20</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item10}>10</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item16}>16</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item16}>16</div>
+                    <div className={styles.item17}>17</div>
+                    <div className={styles.item18}>18</div>
+                    <div className={styles.item19}>19</div>
+                    <div className={styles.item20}>20</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item16}>16</div>
+                    <div className={styles.item17}>17</div>
+                    <div className={styles.item18}>18</div>
+                    <div className={styles.item19}>19</div>
+                    <div className={styles.item20}>20</div>
+                    <div className={styles.item11}>11</div>
+                    <div className={styles.item12}>12</div>
+                    <div className={styles.item13}>13</div>
+                    <div className={styles.item14}>14</div>
+                    <div className={styles.item15}>15</div>
+                    <div className={styles.item16}>16</div>
+                    <div className={styles.item17}>17</div>
+                    <div className={styles.item18}>18</div>
+                    <div className={styles.item19}>19</div>
+                    <div className={styles.item20}>20</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item8}>8</div>
+                    <div className={styles.item9}>9</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div>
+                    <div className={styles.item3}>3</div>
+                    <div className={styles.item4}>4</div>
+                    <div className={styles.item5}>5</div>
+                    <div className={styles.item6}>6</div>
+                    <div className={styles.item7}>7</div>
+                    <div className={styles.item1}>1</div>
+                    <div className={styles.item2}>2</div> */}
 
-                </header> */}
 
-                <Carrosel />
+
+
+
+                </div>
             </body>
             <footer></footer>
         </html>
